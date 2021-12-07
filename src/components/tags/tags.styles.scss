@@ -1,0 +1,37 @@
+
+.filter-box {
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.filter-box > div:first-child {
+    flex: 1;
+    display: flex;
+}
+
+.filter-box > div:last-child {
+    margin-right: 10px;
+    color: #4d4d4d;
+}
+
+.tag {
+    padding: 2px 10px;
+    margin: 2px 4px;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.tag-blue {
+    background: #007bff;
+}
+
+.tag-green {
+    background: #0f8c94;
+}
+
+.tag-active {
+    background-color: rgb(45, 75, 101);
+    transform: scale(1.5);
+}

@@ -1,0 +1,68 @@
+.history-picker {
+    background: rgb(233, 233, 233);
+    height: 180px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.pick-box {
+    width: 150px;
+    margin-right: 20px;
+    padding: 10px;
+    font-size: 0.9rem;
+    flex: 1;
+    margin-bottom: 10px;
+}
+
+.pick-box ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pick-box > div {
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgb(200, 200, 200);
+    margin-bottom: 4px;
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+.pick-box li {
+    padding: 2px;
+}
+
+.action {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.result-block {
+    margin: 5px 0;
+}
+
+.action-active {
+    font-weight: bold;
+}
+
+.close-icon {
+    display: none;
+}
+
+.action-active {
+    
+    .close-icon {
+        display: inline;
+    }
+    &.no-remove {
+        .close-icon {
+            display: none;
+        }
+    }
+}
+
+
+.text-muted-more {
+    color: #cbcaca;
+}
