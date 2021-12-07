@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# About
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+`tableau-ui-prototype` is shared class project for [CS554K](https://blogs.ubc.ca/cpsc544/home/) in the University of British Columbia for HCI course. This project showcase a concept prototype of improved interface for Tableau server.
 
-## Available Scripts
 
-In the project directory, you can run:
+# Pre-requisite
+In order to develop this project you require following software on your system:
+   1. node.js (Runtime for JS environment)
+   2. VS Code (IDE for development)
 
-### `npm start`
+# How to Install
+1. Clone the project using the following command into a directory:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+    ```
+     $> git clone https://github.com/ashish-chopra/tableau-ui-prototype.git
+    ```
+2. Install the dependencies using following command:
+   ```
+     $> npm install
+   ```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+3. Once done, start the server using command:
+    ```
+    $> npm start
+    ```
+ It will open the website in a browser, if not already, then access the URL on your browser `http://localhost:4200`.
 
-### `npm test`
+# Data Schema
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Key             | Type    | Description |
+| --- | --- | --- |
+| id              | integer | Unique ID for each viz |
+| description     | string  | User-provided description of the viz |
+| title           | string  | User-provided title of the viz |
+| views           | integer | The number of times someone has seen this viz |
+| tags            | array   | Tags that correspond to this viz |
+| created         | string  | The date the viz was created |
+| thumb           | string  | Path to a thumbnail-size screenshot of the viz |
+| img             | string  | Path to the full-size screenshot of the viz |
+| isLive          | boolean | A boolean indicating whether the viz has a live data source |
+| isLessThanSeven | boolean | A boolean indicated whether the viz has been seen in the last seven days | 
+| author | string | The first and last name of the author of the blog |
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Contributors
+1. [Ashish Chopra](https://github.com/ashish-chopra)
+2. Gustavo 
+3. Limor Tamim
